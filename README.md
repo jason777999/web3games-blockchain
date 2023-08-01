@@ -29,15 +29,15 @@ Web3Games is a new generation gaming ecosystem built on Substrate.
 
 Install Rust:
 
-```bash
+````bash
 curl https://sh.rustup.rs -sSf | sh
-```
+````
 
 Initialize your Wasm Build environment:
 
-```bash
+````bash
 ./scripts/init.sh
-```
+````
 
 Build Wasm and native code:
 
@@ -51,15 +51,15 @@ cargo build --release
 
 Purge any existing developer chain state:
 
-```bash
+````bash
 ./target/release/web3games-node purge-chain --dev
-```
+````
 
 Start a development chain with:
 
-```bash
+````bash
 ./target/release/web3games-node --dev
-```
+````
 
 Detailed logs may be shown by running the node with the following environment variables set: `RUST_LOG=debug RUST_BACKTRACE=1 cargo run -- --dev`.
 
